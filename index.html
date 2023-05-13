@@ -1,1 +1,31 @@
+<!--
+This code will display a form,
+which will save data to the Spreadsheet within Sheet "Coaches".
+-->
+<form data-spreadsheet-api="https://sheet2api.com/v1/faGJgVvZSkeU/crossfit-gym/Coaches">
+    <input type="text" name="Name" placeholder="Name" />
+    <input type="text" name="Title" placeholder="Title" />
+    <input type="text" name="Photo" placeholder="Photo" />
+    <input type="text" name="Summary" placeholder="Summary" />
+    <input type="text" name="Interview" placeholder="Interview" />
+    <input type="text" name="UF" placeholder="Uf" />
+    <button type="submit" onClick="alert('Submitted')">Submit</button>
+</form>
+<script src="https://sheet2api.com/v1/template.js"></script>
+
+<!-- O Jotform -->
 <script type="text/javascript" src="https://form.jotform.com/jsform/231115732403645"></script>
+
+<!--
+This code will list the contents of your Spreadsheet
+Sheet "Coaches" onto the web page.
+-->
+<div data-spreadsheet-api="https://sheet2api.com/v1/faGJgVvZSkeU/crossfit-gym/Coaches">
+    <div><b>Name:</b>{{Name}}</div>
+    <div><b>Title:</b>{{Title}}</div>
+    <div><b>Photo:</b>{{Photo}}</div>
+    <div><b>Summary:</b>{{Summary}}</div>
+    <div><b>Interview:</b>{{Interview}}</div>
+    <div><b>Uf:</b>{{UF}}</div>
+</div>
+<script src="https://sheet2api.com/v1/template.js"></script>
